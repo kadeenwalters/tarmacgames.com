@@ -1,13 +1,71 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Privacy Policy</title><style>*{box-sizing:border-box}body{margin:0;background:#23243a;color:#e6e4dc;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.65}
-main{max-width:760px;margin:0 auto;padding:40px 22px 60px}h1{font-size:30px;margin:0 0 4px;color:#fff}h2{font-size:17px;letter-spacing:2px;text-transform:uppercase;color:#FDB833;margin:34px 0 10px}
-p{margin:10px 0}ul{padding-left:22px}li{margin:4px 0}a{color:#2EC4B6}.sub{color:#9aa0c0;font-size:14px;margin:0 0 18px}nav{font-size:14px;color:#9aa0c0;margin-bottom:26px}nav a{margin-right:14px}
-.card{background:rgba(255,255,255,.06);border-radius:14px;padding:18px 20px;margin:18px 0}</style></head>
-<body><main><nav><a href="/">Tarmac games</a><a href="/privacy.html">Privacy policy</a><a href="/support.html">Support</a></nav><h1>Privacy Policy</h1><p class="sub">Tarmac games: Tarmac — Baggage Handler and Tarmac — Tug Run · Last updated: 1 October 2026</p><p>This policy covers both games in the Tarmac series: Tarmac — Baggage Handler and Tarmac — Tug Run. They are separate apps, and the same rules apply to each except where this policy says otherwise.</p>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy policy — Tarmac games</title><meta name="description" content="The privacy policy for Tarmac — Baggage Handler and Tarmac — Tug Run."><meta name="theme-color" content="#2B2D42">
+<link rel="icon" type="image/png" sizes="64x64" href="/assets/icon-64.png"><link rel="apple-touch-icon" href="/assets/icon-256.png">
+<meta property="og:title" content="Privacy policy — Tarmac games"><meta property="og:description" content="The privacy policy for Tarmac — Baggage Handler and Tarmac — Tug Run."><meta property="og:image" content="https://tarmacgames.com/assets/feature.png">
+<style>@font-face{font-family:'Baloo 2';src:url('/fonts/baloo2-latin-var.woff2') format('woff2');font-weight:500 800;font-display:swap}
+@font-face{font-family:'Space Mono';src:url('/fonts/spacemono-700-latin.woff2') format('woff2');font-weight:700;font-display:swap}
+:root{--charcoal:#2B2D42;--cream:#F4EBD9;--tarmac:#41435f;--coral:#FF5A5F;--marigold:#FDB833;--teal:#2EC4B6;--ink:#23243a;--dim:#9aa0c0;--mute:#c3c8e6}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:#1a1b2e}
+body{min-height:100vh;background:linear-gradient(180deg,#343a4d,#23243a 60%,#1a1b2e);color:#fff;font-family:'Baloo 2',system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:var(--teal);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+.mono{font-family:'Space Mono',monospace;font-weight:700;letter-spacing:3px;text-transform:uppercase;font-size:11px}
+/* header */
+header{padding:28px 0 8px;text-align:center}
+.kick{color:var(--teal)}
+.title{font-size:46px;font-weight:800;letter-spacing:1px;line-height:1;margin-top:4px}.title .acc{color:var(--marigold)}
+.tabs{display:flex;gap:8px;justify-content:center;padding:18px 0 0;flex-wrap:wrap}
+.tab{flex:1 1 0;max-width:176px;min-width:96px;text-align:center;padding:12px 4px;min-height:46px;display:flex;align-items:center;justify-content:center;border-radius:12px 12px 0 0;background:rgba(255,255,255,.05);color:var(--dim);font-weight:700;font-size:12px;letter-spacing:.6px}
+.tab.on{background:rgba(255,255,255,.10);color:#fff}
+.tab:hover{text-decoration:none;color:#fff}
+main{padding:22px 0 40px}
+/* cards */
+.hero{display:block;border-radius:18px;padding:22px 22px 20px;color:#06302c;box-shadow:0 7px 0 #176b63;background:linear-gradient(135deg,#2EC4B6,#1f8e84);margin-bottom:18px;transition:transform .08s}
+.hero.rush{background:linear-gradient(160deg,#e8654f,#c8452f);box-shadow:0 7px 0 #8f2f1e;color:#3a0c05}
+.hero.quick{background:linear-gradient(160deg,#8f7ae6,#6a52c9);box-shadow:0 7px 0 #4b3a94;color:#1d1440}
+.hero .hlabel{font-family:'Space Mono';font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:700;opacity:.7}
+.hero .htitle{font-weight:800;font-size:clamp(24px,5vw,34px);letter-spacing:1px;margin-top:2px}
+.hero .hdesc{font-size:15px;font-weight:600;opacity:.92;margin-top:6px;line-height:1.45;max-width:640px}
+.pill{font-family:'Space Mono';font-weight:700;font-size:13px;background:rgba(0,0,0,.14);display:inline-flex;align-items:center;gap:8px;padding:7px 13px;border-radius:9px;margin:12px 10px 0 0;color:inherit}
+.pill:hover{text-decoration:none;background:rgba(0,0,0,.24)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:640px){.grid2{grid-template-columns:1fr}}
+.card{background:rgba(255,255,255,.06);border-radius:16px;padding:16px 18px;margin-bottom:14px}
+.card.blue{background:rgba(91,141,239,.12);border:2px solid rgba(91,141,239,.35)}
+.card.gold{background:rgba(253,184,51,.10);border:2px solid rgba(253,184,51,.35)}
+.card.pass{background:linear-gradient(160deg,#3b2f66,#241c45);border:2px solid rgba(253,184,51,.45);display:flex;gap:16px;align-items:center}
+.card.pass img{width:84px;height:84px;border-radius:18px;flex:0 0 auto}
+.sectitle{font-family:'Space Mono';font-size:12px;letter-spacing:2px;color:var(--dim);text-transform:uppercase;font-weight:700;margin:26px 2px 10px}
+.row{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.06);border-radius:14px;padding:11px 13px;margin-bottom:8px}
+.row .ic{width:38px;height:38px;border-radius:10px;background:#4a4d6e;display:flex;align-items:center;justify-content:center;font-size:19px;flex-shrink:0}
+.row .nm{font-size:14px;font-weight:800}.row .ds{font-size:12.5px;color:var(--dim);line-height:1.35}
+/* screenshots shelf */
+.shelf{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 14px;scrollbar-width:none}
+.shelf::-webkit-scrollbar{display:none}
+.shot{flex:0 0 200px;scroll-snap-align:start;border-radius:14px;overflow:hidden;background:rgba(0,0,0,.2);box-shadow:0 6px 0 rgba(0,0,0,.25)}
+.shot img{display:block;width:100%;height:auto}
+/* buttons */
+.btn{display:inline-block;background:var(--marigold);color:var(--ink);font-weight:800;font-size:15px;letter-spacing:1px;padding:12px 26px;border-radius:14px;box-shadow:0 6px 0 #c8901f;margin:8px 8px 0 0}
+.btn:hover{text-decoration:none;transform:translateY(2px);box-shadow:0 4px 0 #c8901f}
+.btn.sec{background:#4a4d6e;color:#fff;box-shadow:0 6px 0 #303350}.btn.sec:hover{box-shadow:0 4px 0 #303350}
+/* prose pages */
+.prose h2{font-family:'Space Mono';font-size:12px;letter-spacing:2px;color:var(--marigold);text-transform:uppercase;font-weight:700;margin:28px 0 8px}
+.prose h3{font-size:15px;font-weight:800;color:#fff;margin:14px 0 4px}
+.prose p{color:var(--mute);font-size:15px;margin:8px 0}
+.prose ul{padding-left:20px;color:var(--mute);font-size:15px}.prose li{margin:4px 0}
+.prose .sub{color:var(--dim);font-size:13px;font-family:'Space Mono';letter-spacing:.5px;margin-bottom:6px}
+.prose p b,.prose p strong{color:#fff}
+footer{padding:26px 0 calc(24px + env(safe-area-inset-bottom));text-align:center;color:#6d738f;font-size:12px;letter-spacing:.5px;line-height:2}
+footer a{color:#9aa0c0;white-space:nowrap}
+</style></head>
+<body><div class="wrap"><header><div class="mono kick">Baggage ramp</div><div class="title">TARMAC<span class="acc">.</span></div><nav class="tabs"><a class="tab" href="/">GAMES</a><a class="tab on" href="/privacy.html">PRIVACY</a><a class="tab" href="/support.html">SUPPORT</a></nav></header>
+<main><div class="prose"><div class="sub">Tarmac games: Tarmac — Baggage Handler and Tarmac — Tug Run · Last updated: 1 October 2026</div></div><div class="prose"><p>This policy covers both games in the Tarmac series: Tarmac — Baggage Handler and Tarmac — Tug Run. They are separate apps, and the same rules apply to each except where this policy says otherwise.</p>
 <p>Neither game collects, transmits, or shares any personal data of its own. There are no accounts, no analytics, and no tracking by us. A game talks to the internet in two cases only: when Google Play or the App Store processes the one optional purchase, which is a conversation between you and the store; and, in Baggage Handler only, when you choose to watch a reward video, which is served by Google AdMob and described under ADVERTISING below. Tug Run shows no ads. Everything a game saves stays on your device.</p>
-<h2>Information We Collect</h2>
+<h2 id="informationwecollect">Information We Collect</h2>
 <p>None, by us. Neither game has a sign-in, a profile, or a server of its own. We cannot see your scores, your settings, or how you play, because the games never send that information anywhere. The one third party that receives anything is Google, and only when you choose to watch a reward video in Baggage Handler; what it receives is listed under ADVERTISING.</p>
-<h2>Information Stored On Your Device</h2>
+<h2 id="informationstoredony">Information Stored On Your Device</h2>
 <p>So that your progress survives closing a game, each game saves the following locally, in its own app storage on your device:</p>
 <h3>Tarmac — Baggage Handler</h3>
 <ul>
@@ -34,7 +92,7 @@ p{margin:10px 0}ul{padding-left:22px}li{margin:4px 0}a{color:#2EC4B6}.sub{color:
 <li>On iOS, it is included in your iCloud or computer backup of the iPhone if you have backups switched on, and comes back when you restore that backup. Baggage Handler additionally keeps a copy in the iCloud key-value storage of the Apple ID signed in on your iPhone, if iCloud Drive is switched on, so its progress follows your Apple ID to a new iPhone.</li>
 </ul>
 <p>In every case the copy is held by Google or Apple under their own privacy policies. It is stored in your account, not ours, and we have no way to read it.</p>
-<h2>In-App Purchases</h2>
+<h2 id="inapppurchases">In-App Purchases</h2>
 <p>Each game offers one optional purchase, the Ramp Pass. It is a one-time purchase handled entirely by Google Play on Android and by the App Store on iOS. In Tug Run the Ramp Pass opens the later levels, the second airport, the Arrivals and Dispatch modes, pass-only liveries, and double Ramp Coins. In Baggage Handler it removes ad offers entirely, gives a free continue every shift, double Ramp Coins, a daily kit refill and the pass liveries.</p>
 <ul>
 <li>Payment is taken by the store, under the store&#x27;s own privacy policy. The game never sees your payment details, your name, or your email address.</li>
@@ -43,26 +101,27 @@ p{margin:10px 0}ul{padding-left:22px}li{margin:4px 0}a{color:#2EC4B6}.sub{color:
 </ul>
 <p>Neither game sells Ramp Coins or anything consumable. Coins are earned only by playing, or, in Baggage Handler, by choosing to watch a reward video.</p>
 <p>The store&#x27;s own records of the purchase are held by Google or Apple, not by us. See the Google Privacy Policy (<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>) or the Apple Privacy Policy (<a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a>) for how they handle it.</p>
-<h2>Advertising</h2>
+<h2 id="advertising">Advertising</h2>
 <p>This section applies to Tarmac — Baggage Handler only. Tug Run contains no advertising.</p>
 <p>Baggage Handler shows reward videos through Google AdMob. They are never forced: an ad plays only when you tap a button that says so, in exchange for a continue, doubled shift coins or a kit charge, and the game is complete without ever watching one. Ramp Pass holders are not shown ad offers at all. There are no banners and no ads between screens.</p>
 <p>When you choose to watch an ad, Google&#x27;s advertising software receives the usual data an ad request carries: your device&#x27;s advertising identifier (if you allow it), your IP address and the approximate location derived from it, your device model and operating system, and the ad&#x27;s own interaction data, such as whether it was watched to the end. Google uses this to serve and measure the ad and, where you have consented, to personalise it. How Google handles this data is described in Google&#x27;s advertising policy (<a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a>).</p>
 <p>Where the law requires it, including the European Economic Area, the United Kingdom and some US states, the game asks for your consent before any ad is requested, using Google&#x27;s consent form, and a &quot;Privacy options&quot; link in the game&#x27;s settings lets you change that choice at any time. On iOS the system&#x27;s App Tracking Transparency prompt is shown first; declining it still shows the same reward videos, without personalisation. You can also reset your advertising identifier or opt out of ad personalisation in your device&#x27;s privacy settings.</p>
-<h2>Analytics</h2>
+<h2 id="analytics">Analytics</h2>
 <p>There are none. Neither game contains an analytics SDK or a crash-reporting service of our own.</p>
-<h2>Permissions</h2>
+<h2 id="permissions">Permissions</h2>
 <ul>
 <li>Vibration: haptic feedback on key moments, such as loading a bag, a hit on the ramp, or earning an award. Can be turned off in each game&#x27;s settings.</li>
 <li>Internet: used by Google Play or the App Store to complete or restore the Ramp Pass purchase, and, in Baggage Handler, to load a reward video when you ask for one. Both games play fully offline; without a connection Baggage Handler simply does not offer ads.</li>
 <li>Billing: lets Google Play offer the Ramp Pass for sale inside the game. Android only.</li>
 <li>Advertising ID: Baggage Handler on Android only, used by Google AdMob as described under ADVERTISING.</li>
 </ul>
-<h2>Children</h2>
+<h2 id="children">Children</h2>
 <p>Both games are listed for players aged 13 and over on Google Play and rated 4+ on the App Store. We collect no personal information ourselves. In Baggage Handler, ads are requested only on your own tap, and Google&#x27;s consent form is shown wherever the law requires one.</p>
-<h2>Deleting Your Data</h2>
+<h2 id="deletingyourdata">Deleting Your Data</h2>
 <p>Uninstalling a game removes everything it has saved. Clearing the app&#x27;s storage through your device settings has the same effect, and both games offer &quot;Reset progress&quot; in their own settings; in Baggage Handler this also removes the iCloud copy. We hold nothing on any server, so there is nothing for us to delete. Your record of a Ramp Pass purchase lives with Google or Apple, and you can manage it through your store account. Data that Google holds from reward videos is managed through your Google and device ad settings, not through us.</p>
-<h2>Changes To This Policy</h2>
+<h2 id="changestothispolicy">Changes To This Policy</h2>
 <p>If a future version of either game adds anything that touches the network beyond what is described here, such as a global leaderboard or ads in Tug Run, this policy will be updated before that version is released, and the date at the top will change.</p>
-<h2>Contact</h2>
+<h2 id="contact">Contact</h2>
 <p>Questions about this policy can be sent to tarmac.baggage.game@gmail.com.</p>
-<p>Tarmac — Baggage Handler and Tarmac — Tug Run. This policy covers both mobile apps as published on Google Play and the Apple App Store.</p></main></body></html>
+<p>Tarmac — Baggage Handler and Tarmac — Tug Run. This policy covers both mobile apps as published on Google Play and the Apple App Store.</p></div></main>
+<footer>Tarmac games · made by one person · <a href="/privacy.html">Privacy policy</a> · <a href="/support.html">Support</a> · <a href="mailto:tarmac.baggage.game@gmail.com">tarmac.baggage.game@gmail.com</a></footer></div></body></html>
